@@ -1,9 +1,10 @@
 from pydantic import BaseModel
 from uuid import UUID
 
-class AddUserInputDto(BaseModel):
+class UpdateUserInputDto(BaseModel):
+    id: UUID
     name: str
 
-class AddUserOutputDto(BaseModel):
+class UpdateUserOutputDto(BaseModel):
     id: UUID
     name: str

@@ -1,11 +1,19 @@
 from uuid import UUID
 from pydantic import BaseModel
+from typing import List
 
 
 class FindUserInputDto(BaseModel):
     id: UUID
 
+class TaskOutputDto(BaseModel):
+    id: UUID
+    title: str
+    description: str
+    completed: bool
 
-class FindUserOutpudDto(BaseModel):
+class FindUserOutputDto(BaseModel):
     id: UUID
     name: str
+    tasks: List[TaskOutputDto]
+    pending_tasks: int    

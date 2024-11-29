@@ -1,6 +1,6 @@
 from typing import Any
-from aula.src.domain.user.user_repository_interface import UserRepositoryInterface
-from domain.__seedwork.user_case_interface import UseCaseInterface
+from domain.user.user_repository_interface import UserRepositoryInterface
+from domain.__seedwork.use_case_interface import UseCaseInterface
 from usecases.user.add_user.add_user_dto import AddUserInputDto, AddUserOutputDto
 from domain.user.user_entity import User
 import uuid
